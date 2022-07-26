@@ -1,0 +1,179 @@
+.topbarContainer {
+  height: 3em;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  color: black;
+}
+
+.topbarLeft {
+  flex: 3;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-left: 1em;
+  font-weight: 900;
+  cursor: pointer;
+}
+.logo_link:visited {
+  color: black;
+}
+.topbarCenter {
+  flex: 5;
+}
+
+.searchbar {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(239, 239, 239);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  font-size: 20px !important;
+  margin-left: 10px;
+}
+
+.searchInput {
+  border: none;
+  background-color: rgb(239, 239, 239);
+
+  width: 90%;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.topbarRight {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(0, 0, 0);
+}
+
+.topbarLink {
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.topbarIcons {
+  display: flex;
+}
+
+.topbarIconItem {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.topbarIconBadge {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(0, 251, 255);
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.topbarImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.topbarMenu {
+  display: none;
+}
+
+.autoCompleteComponent {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 2.7em;
+  transform: translateX(50%);
+  background: rgba(255, 255, 255, 0.295);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 0.5em;
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+  width: 10em;
+  gap: 1em;
+}
+
+.searchOption {
+  display: flex;
+  cursor: pointer;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  justify-content: right;
+  justify-items: right;
+  align-items: right;
+  text-decoration: none;
+  width: 10em;
+}
+
+.searchOptionItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10em;
+  text-decoration: none;
+  border-radius: 0.5em;
+
+}
+
+.searchOption:link {
+  text-decoration: none;
+  color: black;
+}
+
+.searchOption:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.searchProfileUserName {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  justify-content: right;
+  justify-items: right;
+  align-items: right;
+  width: 10em;
+}
+
+.searchProfilePicture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
