@@ -21,7 +21,10 @@ export default function Register() {
         password: password.current.value,
       };
       try {
-        await axios.post("/auth/register", user);
+        await axios.post(
+          `${process.env.REACT_APP_BACKEND_URL}/auth/register`,
+          user
+        );
         history.push("/login");
       } catch (err) {
         console.log(err);
@@ -33,9 +36,9 @@ export default function Register() {
     <div className="login">
       <div className="loginWrapper">
         <div className="loginLeft">
-          <h3 className="loginLogo">Lamasocial</h3>
+          <h3 className="loginLogo">ZAMP</h3>
           <span className="loginDesc">
-            Connect with friends and the world around you on Lamasocial.
+            Connect with friends and the world.
           </span>
         </div>
         <div className="loginRight">

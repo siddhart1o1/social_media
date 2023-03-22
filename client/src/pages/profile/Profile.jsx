@@ -14,7 +14,9 @@ export default function Profile() {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await axios.get(`/users?username=${username}`);
+      const res = await axios.get(
+        `${process.env.REACT_APP_BACKEND_URL}/users?username=${username}`
+      );
       setUser(res.data);
     };
     fetchUser();
@@ -54,7 +56,7 @@ export default function Profile() {
           </div>
           <div className="profileRightBottom">
             <Feed username={username} />
-            <Rightbar user={user} />
+              {{ user } ? <Rightbar user={user} /> : null}
           </div>
         </div>
       </div>
