@@ -21,7 +21,7 @@ export default function Topbar() {
     try {
       const CALL_API = async () => {
         const response = await axios.get(
-          `http://localhost:8800/api/search/user?q=${SearchInput}`
+          `${process.env.REACT_APP_BACKEND_URL}/search/user?q=${SearchInput}`
         );
         for (var i = 0; i < response.data.length; i++) {
           Array.push({
